@@ -1,37 +1,51 @@
 # Car-Dealership-Inventory-System
 
-Car Dealership Management System (SQL)
 📌 Project Overview
 This project is a relational database designed to manage the core operations of a car dealership. It handles inventory tracking, customer relationships, sales transactions, and service scheduling. The primary goal was to create a normalized database structure that ensures data integrity while providing actionable business insights through SQL queries.
 
 🛠️ Key Technical Features
+Universal Setup: The script is designed to be portable; it creates the necessary database and tables automatically upon execution.
+
 Relational Schema: Designed a 6-table database including Customers, Cars, Sales, Salespersons, Managers, and Service Appointments.
 
-Data Integrity: Implemented Primary Keys, Foreign Keys, and Unique constraints (e.g., VIN and Email) to prevent data duplication and errors.
+Data Integrity: Implemented Primary Keys, Foreign Keys, and Unique constraints (e.g., VIN and Email) to ensure data consistency.
 
-Complex Querying: Developed advanced queries using JOINs, Subqueries, and Aggregate Functions to extract business intelligence.
+Automation: Features a Stored Procedure to handle sales transactions and a Trigger to enforce business pricing rules.
 
-Automation (Bonus): Features a Stored Procedure to automate the sales process and a Trigger to enforce business pricing rules.
+Business Intelligence: Includes custom Views and complex JOINs to simplify management reporting.
 
 📊 Business Questions Answered
-The included script contains queries that answer critical business questions, such as:
+The script contains logic to answer critical business questions, such as:
 
-Inventory Status: "How many cars are currently available for sale?"
+Inventory: Current available car count.
 
-Revenue Tracking: "What is the total revenue generated from all car sales?"
+Revenue: Total revenue generated across all sales.
 
-Performance Metrics: "Which salesperson has sold the most cars?"
+Performance: Top-performing salespersons based on volume and highest individual sale price.
 
-Management Structure: "Who are the managers and how many salespeople report to each?"
+Staffing: Manager-to-employee reporting structure.
 
-Customer Loyalty: "Which cars have been brought in for service more than once?"
+Service: Identifying recurring customers in the service department.
 
 🚀 How to Run the Project
-Ensure you have MySQL Workbench or any SQL client installed.
+This project is contained entirely within a single SQL script for easy deployment and review.
 
-Download the Car_Dealership_Project.sql file.
+Open the main_script.sql file in MySQL Workbench or any SQL editor.
 
-Open the file in your SQL client and run the entire script.
+Run the entire script. It will automatically:
+
+Create the CarDealershipDB database.
+
+Build the relational table structure.
+
+Populate the tables with sample data.
+
+Execute the analytical queries and display the results.
+
+📁 Repository Structure
+main_script.sql: The primary SQL file containing the schema, data, and analytical logic.
+
+README.md: Project documentation and instructions.
 
 The script will automatically create the CarDealershipDB database, build all tables, insert sample data, and output the results of the analytical queries.
 
